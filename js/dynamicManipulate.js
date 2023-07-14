@@ -87,7 +87,7 @@ headerAvatarImage.style.height = "100%";
 headerAvatarImage.style.borderRadius = "50%";
 headerAvatarImage.style.backgroundColor = "#4CAF50";
 headerAvatarImage.style.flexShrink = "0";
-headerAvatarImage.style.backgroundImage = 'url("images/bot_image.jpg")';
+headerAvatarImage.style.backgroundImage = 'url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/images/bot_image.jpg?raw=true")';
 headerAvatarImage.style.backgroundSize = "cover";
 
 
@@ -222,7 +222,7 @@ chatButton.style.border = "none";
 chatButton.style.padding = "15px 15px";
 chatButton.style.borderRadius = "5px";
 chatButton.style.cursor = "pointer";
-chatButton.style.backgroundImage = 'url("images/button_image.png")';
+chatButton.style.backgroundImage = 'url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/images/button_image.png?raw=true")';
 chatButton.style.backgroundSize = "cover";
 chatButton.style.backgroundPosition = "center";
 chatButton.style.backgroundRepeat = "no-repeat";
@@ -325,7 +325,7 @@ const appendMessage_bot = (message) => {
     botAvatar.style.borderRadius = "50%";
     botAvatar.style.backgroundColor = "#4CAF50";
     botAvatar.style.flexShrink = "0";
-    botAvatar.style.backgroundImage = 'url("images/bot_image.jpg")'; // Better use Absoult Path
+    botAvatar.style.backgroundImage = 'url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/images/bot_image.jpg?raw=true")'; // Better use Absoult Path
     botAvatar.style.backgroundSize = "cover";
 
 
