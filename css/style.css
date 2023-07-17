@@ -61,7 +61,7 @@ footer {
 
 .chat-container {
     position: fixed;
-    bottom: 100px; /* Adjusted bottom position */
+    bottom: 90px; /* Adjusted bottom position */
     right: 20px;
     width: 250px;
     background-color: #fff;
