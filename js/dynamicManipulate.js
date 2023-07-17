@@ -24,7 +24,7 @@ chatContainer.classList.add("chat-container");
 chatContainer.id = "chat-container";
 // Style (chatContainer.style.)
 chatContainer.style.position = "fixed";
-chatContainer.style.bottom = "80px"; /* Adjusted bottom position */
+chatContainer.style.bottom = "100px"; /* Adjusted bottom position */
 chatContainer.style.right = "20px";
 chatContainer.style.width = "250px";
 chatContainer.style.backgroundColor = "#fff";
