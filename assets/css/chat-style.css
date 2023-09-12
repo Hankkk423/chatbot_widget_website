@@ -1,8 +1,8 @@
 /*** Basic ***/
 :root {
     /* 3 positions */
-    --global-path-bot-image: 'url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/bot-image-s01.jpg?raw=true")';
-    --global-path-chat-icon: 'url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/chat-icon-s01.png?raw=true")';
+    --global-path-bot-image: url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/bot-image-s01.jpg?raw=true");
+    --global-path-chat-icon: url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/chat-icon-s01.png?raw=true");
 }
 
 body {
