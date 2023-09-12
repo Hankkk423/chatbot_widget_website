@@ -6,12 +6,36 @@ const userInput = document.getElementById("user-input");
 const chatLog = document.getElementById("chat-log");
 const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_GPT';
 
+
+
+// Function to display "the bot is replying" message
+const showBotIsReplying = () => {
+    const botIsReplyingMessage = document.createElement("div");
+    botIsReplyingMessage.classList.add('bot-message', 'is-replying'); // Add a custom class
+    botIsReplyingMessage.textContent = "AI Agent is replying...";
+
+    chatLog.appendChild(botIsReplyingMessage);
+    chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+// Function to remove "the bot is replying" message
+const removeBotIsReplying = () => {
+    const botIsReplyingMessage = chatLog.querySelector('.is-replying'); // Use the custom class
+    if (botIsReplyingMessage) {
+        console.log("remove Hit!");
+        chatLog.removeChild(botIsReplyingMessage);
+    }
+}
+
+
+
 const sendMessage = async () => {
     const message = userInput.value.trim();
     if (message !== '') {
         appendMessage_user(message);
         userInput.value = '';
 
+        showBotIsReplying(); // Display "the bot is replying" message
 
         const response = await fetch(SERVER_URL, {
             method: 'POST',
@@ -30,6 +54,7 @@ const sendMessage = async () => {
 
         // const answer = "test answer";
 
+        removeBotIsReplying(); // Remove "the bot is replying" message
 
         appendMessage_bot(answer);
     }
@@ -99,4 +124,4 @@ chatButton.addEventListener("click", () => {
     }
 });
 
-appendMessage_bot("Hello! How can I help you?", 'bot-message');
+appendMessage_bot("Hello and welcome to 24/7 Care At Home! We're here to provide you with the support and information you need for top-notch home health and hospice care. How can we assist you today? Are you interested in learning more about our services, scheduling a consultation, or have any questions about our compassionate care? Please feel free to ask, and we'll be happy to help!", 'bot-message');

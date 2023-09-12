@@ -61,9 +61,9 @@ footer {
 
 .chat-container {
     position: fixed;
-    bottom: 90px; /* Adjusted bottom position */
+    bottom: 100px; /* Adjusted bottom position */
     right: 20px;
-    width: 250px;
+    width: 350px;
     background-color: #fff;
     border-radius: 10px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
@@ -72,8 +72,8 @@ footer {
 }
 
 .chat-header {
-    padding: 10px;
-    background-color: #1e75c7;
+    padding: 10px 20px;
+    background-color: rgb(18, 28, 45);
     color: white;
     border-top-left-radius: 10px;
     border-top-right-radius: 10px;
@@ -174,40 +174,49 @@ footer {
     color: rgb(155, 166, 179);
 }
 
-.chat-button {
-    background-color: #1e75c7;
-    color: white;
-    border: none;
+.chat-button-container {
+    display: flex;
+    width: 30px;
+    height: 30px;
     padding: 15px 15px;
-    border-radius: 5px;
+    background-color: rgb(18, 28, 45);
+    border-radius: 50%;
+}
+
+.chat-button {
+    background-color: rgb(18, 28, 45);
+    width: 100%; /* Fill the container horizontally */
+    height: 100%; /* Fill the container vertically */
+    margin: 0 0px;
+    border: none;
     cursor: pointer;
-    background-image: url("../images/button_image.png");
-    background-size: cover;
-    background-position: center;
+    background-image: url("../images/chat-icon-s03.png");
+    background-size: contain;
+    background-position: center center;
     background-repeat: no-repeat;
 }
 
-
 .chat-log {
-    height: 260px;
+    height: 350px;
     overflow-y: scroll;
     padding: 10px;
-    background: rgb(234, 238, 243);
+    background: rgb(255, 255, 255);
 }
 
 .user-input {
     border: none;
     padding: 10px;
-    width: 100%;
+    width: 90%;
     border-top: 1px solid #ccc;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    outline: none;
+    outline: none;
 }
 
 .user-message {
     justify-content: flex-end;
     margin-bottom: 10px;
+    margin-left: 30px;
     display: flex;
     align-items: center;
 }
@@ -223,6 +232,7 @@ footer {
 .bot-message {
     justify-content: flex-start;
     margin-bottom: 10px;
+    margin-right: 30px;
     display: flex;
     align-items: flex-start;
 }
