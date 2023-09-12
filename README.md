@@ -14,26 +14,28 @@ The journey through the intersections of AI and web development begins with this
 
 ## Features
 
-- **Dynamic Widget Creation:** The project includes both static and dynamic widget creation methods. The dynamic approach, using `dynamicManipulate.js`, generates the entire chat bot widget and its functionality dynamically, enhancing user interaction.
+- **Dynamic Widget Creation:** The project includes both static and dynamic widget creation methods. The dynamic approach, using `chat-dynamic.js`, generates the entire chat bot widget and its functionality dynamically, enhancing user interaction.
 
-- **User-Interface Customization:** You can tailor the style of the chat bot widget to match your website's design. The widget's appearance can be controlled through the use of `staticManipulate.js`, `style.css`, and HTML elements, allowing for seamless integration.
+- **User-Interface Customization:** You can tailor the style of the chat bot widget to match your website's design. The widget's appearance can be controlled through the use of `chat-static.js`, `chat-style.css`, and HTML elements, allowing for seamless integration.
 
 
 ## Usage
 
 - To use the dynamic chat bot widget:
 
-Include dynamicManipulate.js in your website to dynamically create the chat bot widget.
-Implement the widget's behavior using the provided JavaScript functions
+  1. Include `chat-dynamic.js` and `chat-style.css` in your website to dynamically create the chat bot widget.
+  2. Implement the widget's behavior using the provided JavaScript functions.
+  3. Integrate your Flask application for bot functionalities. Use API calls to communicate between the website and the server.
 
 - To custom the chat bot style: 
 
-You can control the style of the ChatBot by using "staticManipulate.js", "style.css" and "the first part of HTML code". Once you've done modifying the CSS style and HTML elements, you can update "dynamicManipulate.js" correspondingly to match the style you changed.
+You can control the style of the ChatBot by using `chat-static.js`, `chat-style.css` and "the first part of HTML code in `index.html`". The Purpose is to visualize the elements on website and their styles. Once you've done modifying the CSS style and HTML elements, you can update `chat-dynamic.js` correspondingly to dynamically create the chat bot widget elements you changed.
+
 
 - Engage with the chat bot widget:
 
-Type messages in the user input area and press "Enter" to interact with the chat bot.
-Observe how the chat bot responds to user inputs based on predefined interactions or AI-driven responses.
+  - Type messages in the user input area and press "Enter" to interact with the chat bot.
+  - Observe how the chat bot responds to user inputs based on predefined interactions or AI-driven responses.
 
 ## License
 
