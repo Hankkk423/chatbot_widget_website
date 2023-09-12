@@ -2,6 +2,8 @@
 
 Welcome to the ChatBot Widget Website project! This project showcases the integration of an interactive chat bot widget into a website to engage users in conversations related to artificial intelligence (AI). The widget can be created dynamically using JavaScript and customized using CSS styles.
 
+Link: https://hankkk423.github.io/chatbot_widget_website/
+
 ## Introduction
 
 The ChatBot Widget Website project explores the world of artificial intelligence (AI) and frontend web development. By integrating a dynamic chat bot widget into a website, this project provides an interactive way to learn about AI concepts and engage with the technology.
