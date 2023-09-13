@@ -1,7 +1,7 @@
 /*** Basic ***/
 :root {
     /* 3 positions */
-    --global-path-bot-image: url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/bot-image-s01.jpg?raw=true");
+    --global-path-bot-image: url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/bot-image-s02.jpg?raw=true");
     --global-path-chat-icon: url("https://github.com/Hankkk423/chatbot_widget_website/blob/main/assets/imgs/chat-icon-s01.png?raw=true");
 }
 
@@ -70,7 +70,7 @@ body {
     border-radius: 50%;
     background-color: #4caf4f40;
     flex-shrink: 0;
-    /* background-image: url("../imgs/bot-image-s01.jpg"); */
+    /* background-image: url("../imgs/bot-image-s02.jpg"); */
     background-image: var(--global-path-bot-image);
     background-size: cover;
 }
@@ -203,7 +203,7 @@ body {
     border-radius: 50%;
     background-color: #4caf4f40;
     flex-shrink: 0;
-    /* background-image: url("../imgs/bot-image-s01.jpg"); */
+    /* background-image: url("../imgs/bot-image-s02.jpg"); */
     background-image: var(--global-path-bot-image);
     background-size: cover;
 }
