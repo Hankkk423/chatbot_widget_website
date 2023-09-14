@@ -211,19 +211,19 @@ body {
 
 @media (min-width: 992px) {
     .chat-log {
-        height: 450px;
+        height: 350px;
     }
 }
 
 @media (min-width: 1200px) {
     .chat-log {
-        height: 550px;
+        height: 450px;
     }
 }
 
 @media (min-width: 1400px) {
     .chat-log {
-        height: 600px;
+        height: 500px;
     }
 }
 
