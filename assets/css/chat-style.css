@@ -217,13 +217,13 @@ body {
 
 @media (min-width: 1200px) {
     .chat-log {
-        height: 450px;
+        height: 370px;
     }
 }
 
 @media (min-width: 1400px) {
     .chat-log {
-        height: 500px;
+        height: 400px;
     }
 }
 
