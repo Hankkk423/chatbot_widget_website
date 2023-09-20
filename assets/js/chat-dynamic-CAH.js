@@ -44,7 +44,7 @@ chatHeaderCompany.classList.add("chat-header-company");
 // Create header-company-name
 const headerCompanyName = document.createElement('div');
 headerCompanyName.classList.add("header-company-name");
-headerCompanyName.textContent = "Live AI Agent";
+headerCompanyName.textContent = "Emily";
 
 // Create header-company-status
 const headerCompanyStatus = document.createElement('div');
