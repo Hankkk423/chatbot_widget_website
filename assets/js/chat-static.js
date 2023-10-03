@@ -4,8 +4,8 @@ console.log("staticManipulate.js working");
 const chatButton = document.getElementById("chat-button");
 const userInput = document.getElementById("chat-user-input");
 const chatLog = document.getElementById("chat-log");
-const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_GPT';
-
+// const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_GPT';
+const SERVER_URL = 'https://hankyen.pythonanywhere.com/test';
 
 
 // Function to display "the bot is replying" message
@@ -124,4 +124,4 @@ chatButton.addEventListener("click", () => {
     }
 });
 
-appendMessage_bot("Hello and welcome to 24/7 Care At Home! We're here to provide you with the support and information you need for top-notch home health and hospice care. How can we assist you today? Are you interested in learning more about our services, scheduling a consultation, or have any questions about our compassionate care? Please feel free to ask, and we'll be happy to help!", 'bot-message');
+appendMessage_bot("Hello and welcome to Hank's Chat Bot. How can I assist you today? If you don't see the respond, it means the bot is offline.", 'bot-message');

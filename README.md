@@ -27,7 +27,7 @@ The journey through the intersections of AI and web development begins with this
 
   1. Include `chat-dynamic.js` and `chat-style.css` in your website to dynamically create the chat bot widget.
   2. Implement the widget's behavior using the provided JavaScript functions.
-  3. Integrate your Flask application for bot functionalities. Use API calls to communicate between the website and the server.
+  3. Integrate your Flask application for bot functionalities. Use API calls `SERVER_URL` in JS to communicate between the website and the server.
 
 - To custom the chat bot style: 
 

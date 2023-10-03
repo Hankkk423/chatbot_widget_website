@@ -1,4 +1,4 @@
-console.log("dynamic-CAH-Manipulate.js working");
+console.log("dynamicManipulate.js working");
 
 // Get references to HTML elements
 const body = document.body;
@@ -44,7 +44,7 @@ chatHeaderCompany.classList.add("chat-header-company");
 // Create header-company-name
 const headerCompanyName = document.createElement('div');
 headerCompanyName.classList.add("header-company-name");
-headerCompanyName.textContent = "Emily";
+headerCompanyName.textContent = "Live AI Agent";
 
 // Create header-company-status
 const headerCompanyStatus = document.createElement('div');
@@ -97,14 +97,15 @@ body.appendChild(chatWidget);
 // const chatButton = document.getElementById("chat-button");
 // const userInput = document.getElementById("user-input");
 // const chatLog = document.getElementById("chat-log");
-const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_GPT';
+// const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_GPT';
+const SERVER_URL = 'https://hankyen.pythonanywhere.com/test';
 
 
 // Function to display "the bot is replying" message
 const showBotIsReplying = () => {
     const botIsReplyingMessage = document.createElement("div");
     botIsReplyingMessage.classList.add('bot-message', 'is-replying'); // Add a custom class
-    botIsReplyingMessage.textContent = "Emily is replying...";
+    botIsReplyingMessage.textContent = "AI Agent is replying...";
 
     chatLog.appendChild(botIsReplyingMessage);
     chatLog.scrollTop = chatLog.scrollHeight;
@@ -216,4 +217,4 @@ chatButton.addEventListener("click", () => {
     }
 });
 
-appendMessage_bot("Hello and welcome to 24/7 Care At Home! We're here to provide you with the support and information you need for top-notch home health and hospice care. How can we assist you today? Please feel free to ask, and we'll be happy to help!", 'bot-message');
+appendMessage_bot("Hello and welcome to Hank's Chat Bot. How can I assist you today? If you don't see the respond, it means the bot is offline.", 'bot-message');
