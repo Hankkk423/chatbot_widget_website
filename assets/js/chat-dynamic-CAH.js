@@ -97,7 +97,7 @@ body.appendChild(chatWidget);
 // const chatButton = document.getElementById("chat-button");
 // const userInput = document.getElementById("user-input");
 // const chatLog = document.getElementById("chat-log");
-const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_GPT';
+const SERVER_URL = 'https://hankyen.pythonanywhere.com/to_model_ChatGPT';
 
 
 // Function to display "the bot is replying" message
