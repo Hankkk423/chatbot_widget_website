@@ -195,15 +195,25 @@ const appendMessage_bot = (message) => {
     chatLog.scrollTop = chatLog.scrollHeight;
 }
 
+// For Tranditional Chinese Input. Track if the IME (Input Method Editor) composition is in progress
+// If 'isComposing' is true, it means the user is still composing text, and the "Enter" key press should not trigger the message sending.
+let isComposing = false;
+
 // Event listener for "userInput (chat-user-input)"
 userInput.addEventListener("keydown", (event) => {
-    if (event.keyCode === 13 || event.key === 'Enter') {
+    if (!isComposing && (event.keyCode === 13 || event.key === 'Enter')) {
         console.log("event hit");
         sendMessage();
     }
-    else{
-        //appendMessage("something wrong", "user-message");
-    }
+});
+
+// 'compositionstart' sets 'isComposing' to true when the user starts composing text (i.e., using an IME).
+userInput.addEventListener("compositionstart", () => {
+    isComposing = true;
+});
+// 'compositionend' sets 'isComposing' to false when the user finishes composing text.
+userInput.addEventListener("compositionend", () => {
+    isComposing = false;
 });
 
 // Event listener for "chatButton (chat-button)"
